@@ -36,22 +36,33 @@ const UseEffectHooksInFunctionalCompo = () => {
     // },[refreshStatus])
     useEffect(() => {
         console.log("called useEffect");
-        fetch('https://fakestoreapi.com/products').then((res) => res.json()).then((result) => { 
+        fetch('https://fakestoreapi.com/products').then((res) => res.json()).then((result) => {
             console.log(result);
-            
+
         })
-        return ()=> {
+        return () => {
             console.log("called return");
         }
-    },[])
+    }, [])
     return (
         <>
-        <div className="container">
-            <p>helllo</p>
-        UseEffect Hooks In Functional Compo
-            <button onClick={() => { setCnt(counter + 1) }}>Increment {counter}</button>
-            {/* <button onClick={() => { anything(secondState + 1) }}>Increment Other State Data {secondState}</button> */}
-            <button onClick={() => { setRefreshStatus(!refreshStatus) }}>Refresh {JSON.stringify(refreshStatus)}</button>
+            <div className="container">
+                <p>helllo</p>
+                UseEffect Hooks In Functional Compo
+                <h2>what is useEffect</h2>
+                <p>
+                    The useEffect Hook allows you to perform side effects in your components.<br />
+
+                    Some examples of side effects are: fetching data, directly updating the DOM, and timers. <br />
+
+
+                    useEffect accepts two arguments. The second argument is optional. <br />
+
+                    useEffect (&lt; function &gt;, &lt; dependency &gt;)
+                </p>
+                <button onClick={() => { setCnt(counter + 1) }}>Increment {counter}</button>
+                {/* <button onClick={() => { anything(secondState + 1) }}>Increment Other State Data {secondState}</button> */}
+                <button onClick={() => { setRefreshStatus(!refreshStatus) }}>Refresh {JSON.stringify(refreshStatus)}</button>
             </div>
         </>
     );
