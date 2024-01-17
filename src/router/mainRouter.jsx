@@ -3,7 +3,7 @@ import { createBrowserRouter } from "react-router-dom";
 import AboutusCompo from "./../Component/pages/AboutUs.jsx"
 import HomeCompo from "./../Component/pages/HomeCompo.jsx"
 import HeaderCompo from './../Component/comman/header.jsx';
-import ContactCompo from './../Component/pages/ContactCompo.jsx';
+import ContactCompo from '../Component/pages/WebsiteIntro.jsx';
 
 // import ContactCompo from './../Component/pages/ContactCompo.jsx';
 import ExampleCompo from './../Component/pages/ExampleCompo.jsx';
@@ -41,6 +41,7 @@ const router = createBrowserRouter([
                 element: (<Suspense fallback={<>loading...</>} ><FunctionalCompoRoute /></Suspense>)
                 // element: (<><FunctionalComponent /></>),
             }
+
         ]
     }
 ])

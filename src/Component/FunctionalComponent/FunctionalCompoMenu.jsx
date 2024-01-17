@@ -21,7 +21,10 @@ const FunctionalCompoMenu = () => {
                         <li><Link to="usereffectinfunctionalcompo"> useRef </Link></li>
                         <li><Link to="UseCallbackHooksInFunctionalCompo"> UseCallback</Link></li>
                         <li><Link to="UseMemoHooksInFunctionalCompo"> Use Memo Hook</Link></li>
-                        <li><Link to="useImperativeHandleHooksInFunctionalCompo"> Use Imperative Handle</Link></li>
+                        <li><Link to="useimperativeHandleHooksinfunctionalCompo"> Use Imperative Handle</Link></li>
+                        <li><Link to="useDebugValueHooksInFunctionalCompo"> Use Debug Value</Link></li>
+                        <li><Link to="honeyCompanyTask">Honey Company Task</Link></li>
+
                     </ol>
                 </div>
             </div>

@@ -14,8 +14,9 @@ import UseLayoutEffectHooksInFunctionalCompo from './12UseLayoutEffectHooksInFun
 import UseRefEffectHooksInFunctionalCompo from './13UseRefEffectHooksInFunctionalCompo.jsx';
 import UseCallbackHooksInFunctionalCompo from './14UseCallbackHooksInFunctionalCompo.jsx';
 import UseMemoHooksInFunctionalCompo from './15UseMemoHooksInFunctionalCompo.jsx';
-import useImperativeHandleHooksInFunctionalCompo from './16useImperativeHandleHooksInFunctionalCompo.jsx';
-
+import UseImperativeHandleHooksInFunctionalCompo from './16useImperativeHandleHooksInFunctionalCompo.jsx';
+import UseDebugValueHooksInFunctionalCompo from './17useDebugValueHooksInFunctionalCompo.jsx';
+import HoneyCompanyTask from './18Honeycom/Parentcom.jsx';
 
 
 
@@ -72,8 +73,17 @@ const FunctionalCompoRoute = () => {
                     element: <UseMemoHooksInFunctionalCompo />,
                 },
                 {
-                    path: "useImperativeHandleHooksInFunctionalCompo",
-                    element: <useImperativeHandleHooksInFunctionalCompo />,
+                    path: "useimperativeHandleHooksinfunctionalCompo",
+                    element: <UseImperativeHandleHooksInFunctionalCompo />,
+                },
+                ,
+                {
+                    path: "useDebugValueHooksinfunctionalCompo",
+                    element: <UseDebugValueHooksInFunctionalCompo />,
+                },
+                {
+                    path: "honeyCompanyTask",
+                    element: <HoneyCompanyTask />,
                 },
             ]
         }])
